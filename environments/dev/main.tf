@@ -11,6 +11,6 @@ module "ec2" {
   ami_id = "ami-0f79166d4c42e6c1e"
   instance_type = "t2.micro"
   subnet_id = module.vpc.Subnet_id
-  count = 1
+  instance_count = 1
   env = "dev"
 }
